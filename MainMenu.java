@@ -97,7 +97,7 @@ public class MainMenu {
 
     private static void addAttendee() {
         int eventId = getIntInput("Enter Event ID: ");
-        for (Event e : events) {+
+        for (Event e : events) {
             if (e.getEventId() == eventId) {
                 int id = getIntInput("Enter Attendee ID: ");
                 System.out.print("Enter Name: ");
@@ -161,3 +161,4 @@ public class MainMenu {
         }
     }
 }
+
