@@ -32,7 +32,7 @@ public class MainMenu {
         } while (choice != 0);
     }
 
-    // ================= MENU =================
+    // ===****=== MENU ===****===
     private static void printMenu() {
         System.out.println("\n********** MENU **************");
         System.out.println("1. List All Events");
@@ -46,7 +46,7 @@ public class MainMenu {
         System.out.println("0. Exit");
     }
 
-    // ================= FEATURES =================
+    //===****=== FEATURES ===****===
     private static void addEvent() {
         int id = getIntInput("Enter Event ID Please: ");
         System.out.print("Enter Event Name Please: ");
@@ -128,7 +128,7 @@ public class MainMenu {
         System.out.println("Event not Avalable");
     }
 
-    // ================= EXCEPTION HANDLING =================
+    // ===****=== EXCEPTION HANDLING ===****===
     private static int getIntInput(String message) {
         while (true) {
             try {
@@ -140,7 +140,7 @@ public class MainMenu {
         }
     }
 
-    // ================= SERIALIZATION =================
+    // ===****=== SERIALIZATION ===****===
     private static void saveData() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
             oos.writeObject(events);
@@ -161,4 +161,5 @@ public class MainMenu {
         }
     }
 }
+
 
